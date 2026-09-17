@@ -1,1 +1,0 @@
-# Janes-Jamdung-Cuisine
