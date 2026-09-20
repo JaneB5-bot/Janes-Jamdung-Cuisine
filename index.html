@@ -4,122 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jane's Jamdung Cuisine | African & Jamaican Food</title>
+    <title>Jane's Jamdung Cuisine | African & Jamaican Cuisine</title>
 
     <meta
         name="description"
-        content="Jane's Jamdung Cuisine — African, Jamaican, and homestyle food made with love."
-    >
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800;900&display=swap"
-        rel="stylesheet"
+        content="Jane's Jamdung Cuisine — authentic African and Jamaican dishes made with love, tradition, and flavor."
     >
 
     <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
 <body>
 
     <!-- =========================
-         HEADER
+         NAVIGATION
     ========================== -->
 
-    <header class="site-header">
+    <header class="navbar">
 
-        <div class="nav-container">
-
-            <a href="#home" class="logo">
-                <span>JANE'S</span>
-                <strong>JAMDUNG</strong>
-            </a>
-
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-            >
-                <span></span>
-                <span></span>
-            </button>
-
-            <nav class="nav" id="nav">
-
-                <a href="#home">Home</a>
-                <a href="#menu">Menu</a>
-                <a href="#story">Our Story</a>
-                <a href="#gallery">Gallery</a>
-
-                <a href="tel:2408456628" class="nav-order">
-                    Order Now
-                </a>
-
-            </nav>
-
+        <div class="logo">
+            <span>Jane's</span>
+            Jamdung Cuisine
         </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#story">Jane's Story</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="tel:2408456628" class="nav-button">
+            Call Jane
+        </a>
 
     </header>
 
 
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <main>
 
-        <!-- =========================
-             HERO
-        ========================== -->
-
         <section class="hero" id="home">
-
-            <div class="hero-background">
-                <div class="hero-placeholder">
-                    <span>YOUR FOOD PHOTO</span>
-                    <small>Replace with your hero image</small>
-                </div>
-            </div>
-
-            <div class="hero-overlay"></div>
 
             <div class="hero-content">
 
                 <p class="eyebrow">
-                    AFRICAN • JAMAICAN • HOMESTYLE
+                    AUTHENTIC • HOMEMADE • MADE WITH LOVE
                 </p>
 
                 <h1>
-                    A taste of home,
-                    <em>made with heart.</em>
+                    A Taste of Home,
+                    <span>Made With Love.</span>
                 </h1>
 
-                <p class="hero-description">
-                    Flavor-filled dishes inspired by African roots,
-                    Jamaican favorites, and the love that belongs
-                    around a good table.
+                <p class="hero-text">
+                    Bringing the bold flavors of Africa and Jamaica
+                    straight to your table — one delicious plate at a time.
                 </p>
 
-                <div class="hero-actions">
+                <div class="hero-buttons">
 
-                    <a href="tel:2408456628" class="button button-gold">
-                        Call to Order
+                    <a href="#menu" class="primary-button">
+                        Explore The Menu
                     </a>
 
-                    <a href="#menu" class="button button-outline">
-                        Explore Menu
+                    <a href="sms:2408456628" class="secondary-button">
+                        Text Jane
                     </a>
 
                 </div>
 
             </div>
 
-            <div class="hero-bottom">
 
-                <span>EST. WITH LOVE</span>
+            <div class="hero-image">
 
-                <div class="hero-line"></div>
+                <!-- CHANGE THIS IMAGE NAME TO YOUR MAIN FOOD PHOTO -->
 
-                <span>SIERRA LEONE • WEST AFRICA</span>
+                <img
+                    src="images/hero-food.jpg"
+                    alt="Jane's Jamdung Cuisine food"
+                >
+
+                <div class="hero-badge">
+                    <strong>Made From</strong>
+                    <span>The Heart ❤️</span>
+                </div>
 
             </div>
 
@@ -127,46 +106,31 @@
 
 
         <!-- =========================
-             INTRO
+             INTRODUCTION
         ========================== -->
 
         <section class="intro">
 
-            <div class="container intro-grid">
-
-                <div class="intro-number">
-                    01
-                </div>
-
-                <div class="intro-heading">
-
-                    <p class="section-kicker">
-                        WELCOME TO JANE'S
-                    </p>
-
-                    <h2>
-                        Food that feels
-                        <span>like home.</span>
-                    </h2>
-
-                </div>
-
-                <div class="intro-text">
-
-                    <p>
-                        Jane's Jamdung Cuisine brings together
-                        bold African flavors, Jamaican favorites,
-                        and the comfort of a home-cooked meal.
-                    </p>
-
-                    <p>
-                        Every dish is made with intention,
-                        tradition, and a whole lot of love.
-                    </p>
-
-                </div>
-
+            <div class="section-label">
+                WELCOME TO JANE'S
             </div>
+
+            <h2>
+                Food that feels like
+                <em>home.</em>
+            </h2>
+
+            <p>
+                At Jane's Jamdung Cuisine, food is more than something
+                you eat — it's an experience, a memory, and a way of
+                bringing people together.
+            </p>
+
+            <p>
+                Inspired by the rich flavors of West Africa and the
+                Caribbean, every dish is prepared with love, tradition,
+                and plenty of flavor.
+            </p>
 
         </section>
 
@@ -177,341 +141,215 @@
 
         <section class="menu-section" id="menu">
 
-            <div class="container">
+            <div class="section-heading">
 
-                <div class="section-top">
-
-                    <div>
-                        <p class="section-kicker">
-                            WHAT'S COOKING
-                        </p>
-
-                        <h2 class="section-title">
-                            The Menu
-                        </h2>
-                    </div>
-
-                    <p class="section-intro">
-                        A few of Jane's favorites.
-                        Call or text to order and ask about
-                        what's available.
+                <div>
+                    <p class="section-label">
+                        WHAT'S COOKING
                     </p>
 
+                    <h2>
+                        Jane's Menu
+                    </h2>
                 </div>
 
-
-                <div class="featured-dish">
-
-                    <div class="dish-image image-placeholder image-one">
-                        <div>
-                            <span>FOOD PHOTO</span>
-                            <small>Jollof Rice & Chicken</small>
-                        </div>
-                    </div>
-
-                    <div class="dish-content">
-
-                        <p class="dish-number">
-                            01 / SIGNATURE
-                        </p>
-
-                        <h3>
-                            Jollof Rice
-                            <span>& Chicken</span>
-                        </h3>
-
-                        <p>
-                            Flavor-packed jollof rice paired with
-                            perfectly seasoned chicken — a classic
-                            that belongs at the table.
-                        </p>
-
-                        <div class="dish-bottom">
-
-                            <strong>$18</strong>
-
-                            <a href="tel:2408456628">
-                                Order this dish →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="menu-grid">
-
-                    <!-- ITEM 2 -->
-
-                    <article class="menu-card">
-
-                        <div class="card-image image-placeholder image-two">
-                            <span>FOOD PHOTO</span>
-                        </div>
-
-                        <div class="card-content">
-
-                            <p class="dish-number">
-                                02
-                            </p>
-
-                            <h3>
-                                Jamaican Oxtail
-                            </h3>
-
-                            <p>
-                                Slow-cooked, rich, tender, and
-                                packed with flavor.
-                            </p>
-
-                            <div class="card-bottom">
-                                <strong>$24</strong>
-                                <a href="tel:2408456628">Order →</a>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ITEM 3 -->
-
-                    <article class="menu-card">
-
-                        <div class="card-image image-placeholder image-three">
-                            <span>FOOD PHOTO</span>
-                        </div>
-
-                        <div class="card-content">
-
-                            <p class="dish-number">
-                                03
-                            </p>
-
-                            <h3>
-                                Jerk Chicken
-                            </h3>
-
-                            <p>
-                                Seasoned, flavorful, and inspired
-                                by the bold taste of Jamaica.
-                            </p>
-
-                            <div class="card-bottom">
-                                <strong>$17</strong>
-                                <a href="tel:2408456628">Order →</a>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ITEM 4 -->
-
-                    <article class="menu-card">
-
-                        <div class="card-image image-placeholder image-four">
-                            <span>FOOD PHOTO</span>
-                        </div>
-
-                        <div class="card-content">
-
-                            <p class="dish-number">
-                                04
-                            </p>
-
-                            <h3>
-                                Fried Plantains
-                            </h3>
-
-                            <p>
-                                Golden, sweet, crispy, and the
-                                perfect side to just about anything.
-                            </p>
-
-                            <div class="card-bottom">
-                                <strong>$7</strong>
-                                <a href="tel:2408456628">Order →</a>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ITEM 5 -->
-
-                    <article class="menu-card">
-
-                        <div class="card-image image-placeholder image-five">
-                            <span>FOOD PHOTO</span>
-                        </div>
-
-                        <div class="card-content">
-
-                            <p class="dish-number">
-                                05
-                            </p>
-
-                            <h3>
-                                Chicken Patties
-                            </h3>
-
-                            <p>
-                                Flaky, savory, and filled with
-                                seasoned chicken.
-                            </p>
-
-                            <div class="card-bottom">
-                                <strong>$5</strong>
-                                <a href="tel:2408456628">Order →</a>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ITEM 6 -->
-
-                    <article class="menu-card special-card">
-
-                        <div class="special-card-content">
-
-                            <p class="dish-number">
-                                06 / ASK JANE
-                            </p>
-
-                            <h3>
-                                Jamdung
-                                <span>Special</span>
-                            </h3>
-
-                            <p>
-                                Ask Jane what's cooking.
-                                Specials and availability may vary.
-                            </p>
-
-                            <div class="card-bottom">
-                                <strong>MARKET PRICE</strong>
-
-                                <a href="sms:2408456628">
-                                    Text Jane →
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-
-                <div class="menu-note">
-
-                    <span>✦</span>
-
-                    <p>
-                        Menu items and availability may change.
-                        Call or text Jane for today's offerings.
-                    </p>
-
-                    <a href="tel:2408456628">
-                        240-845-6628
-                    </a>
-
-                </div>
+                <p>
+                    A little taste of Africa.
+                    A little taste of Jamaica.
+                    A whole lot of flavor.
+                </p>
 
             </div>
+
+
+            <div class="menu-grid">
+
+                <article class="menu-card">
+
+                    <div class="menu-image">
+                        <img
+                            src="images/jollof.jpg"
+                            alt="Jollof Rice"
+                        >
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Jollof Rice</h3>
+                            <span>01</span>
+                        </div>
+
+                        <p>
+                            Flavor-packed West African rice cooked
+                            in a rich tomato and pepper base.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="menu-card">
+
+                    <div class="menu-image">
+                        <img
+                            src="images/chicken.jpg"
+                            alt="African style chicken"
+                        >
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Jerk Chicken</h3>
+                            <span>02</span>
+                        </div>
+
+                        <p>
+                            Juicy chicken seasoned with bold Caribbean
+                            spices and packed with flavor.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="menu-card">
+
+                    <div class="menu-image">
+                        <img
+                            src="images/stew.jpg"
+                            alt="African stew"
+                        >
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Signature Stew</h3>
+                            <span>03</span>
+                        </div>
+
+                        <p>
+                            Slow-cooked, deeply seasoned, and made
+                            with the comforting flavors of home.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="menu-card">
+
+                    <div class="menu-image">
+                        <img
+                            src="images/plantains.jpg"
+                            alt="Fried plantains"
+                        >
+                    </div>
+
+                    <div class="menu-info">
+
+                        <div class="menu-title">
+                            <h3>Sweet Plantains</h3>
+                            <span>04</span>
+                        </div>
+
+                        <p>
+                            Golden, caramelized and perfectly sweet —
+                            the perfect addition to any plate.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="menu-note">
+                Menu items and availability may vary.
+                <br>
+                Call or text Jane for today's menu and pricing.
+            </p>
 
         </section>
 
 
         <!-- =========================
-             STORY
+             JANE'S STORY
         ========================== -->
 
-        <section class="story-section" id="story">
+        <section class="story" id="story">
 
-            <div class="story-image image-placeholder">
+            <div class="story-image">
 
-                <div>
-                    <span>JANE / FOOD PHOTO</span>
-                    <small>Your real photo goes here</small>
+                <!-- CHANGE THIS TO A PHOTO OF YOU -->
+
+                <img
+                    src="images/jane.jpg"
+                    alt="Jane"
+                >
+
+                <div class="story-accent">
+                    <span>From</span>
+                    <strong>Salone</strong>
+                    <span>with love.</span>
                 </div>
 
             </div>
+
 
             <div class="story-content">
 
-                <p class="section-kicker light">
-                    02 / HER STORY
+                <p class="section-label">
+                    GET TO KNOW JANE
                 </p>
 
                 <h2>
-                    From Salone,
-                    <span>with love.</span>
+                    This isn't just
+                    <em>food.</em>
                 </h2>
 
-                <div class="story-copy">
+                <p>
+                    My love for food started long before Jane's Jamdung
+                    Cuisine ever had a name.
+                </p>
 
-                    <p>
-                        For Jane, food has always been more than
-                        something to eat.
-                    </p>
+                <p>
+                    Growing up in Salone — Sierra Leone, West Africa —
+                    food was always so much more than what was sitting
+                    on the plate. It was family. It was culture. It was
+                    laughter in the kitchen, familiar smells filling the
+                    house, and the feeling of knowing that there was
+                    always something being prepared with love.
+                </p>
 
-                    <p>
-                        Growing up in Salone — Sierra Leone,
-                        West Africa — food was woven into family,
-                        culture, celebration, and everyday life.
-                        The kitchen was a place where recipes
-                        carried memories and where a meal could
-                        bring everybody a little closer.
-                    </p>
+                <p>
+                    Those memories stayed with me.
+                </p>
 
-                    <p>
-                        Jane's Jamdung Cuisine is a reflection
-                        of that love. African roots, Jamaican
-                        inspiration, and the comfort of food made
-                        with care all come together on one table.
-                    </p>
+                <p>
+                    As I grew older, I realized that cooking gave me a
+                    way to hold onto those memories while creating new
+                    ones. Every seasoning, every recipe, and every plate
+                    carries a little piece of where I come from.
+                </p>
 
-                    <p>
-                        Every plate is meant to feel personal —
-                        like somebody made it just for you.
-                    </p>
-
-                </div>
+                <p>
+                    Jane's Jamdung Cuisine is my way of sharing that
+                    feeling with you. Whether you're familiar with
+                    African and Jamaican food or you're trying it for
+                    the very first time, my hope is that every bite
+                    makes you feel something.
+                </p>
 
                 <p class="signature">
-                    Made with love, from Jane's kitchen.
+                    With love,<br>
+                    <strong>Jane ♡</strong>
                 </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CULTURE STRIP
-        ========================== -->
-
-        <section class="culture-section">
-
-            <div class="culture-inner">
-
-                <span>ROOTED IN</span>
-
-                <h2>
-                    CULTURE.
-                    <span>FAMILY.</span>
-                    FLAVOR.
-                </h2>
-
-                <span>MADE FOR THE TABLE</span>
 
             </div>
 
@@ -524,50 +362,55 @@
 
         <section class="gallery-section" id="gallery">
 
-            <div class="container">
+            <div class="section-heading centered">
 
-                <div class="section-top gallery-heading">
+                <p class="section-label">
+                    FROM MY KITCHEN TO YOUR TABLE
+                </p>
 
-                    <div>
-                        <p class="section-kicker">
-                            03 / A LOOK INSIDE
-                        </p>
+                <h2>
+                    A little taste
+                    <em>of what I do.</em>
+                </h2>
 
-                        <h2 class="section-title">
-                            From the kitchen
-                        </h2>
-                    </div>
+            </div>
 
-                    <p class="section-intro">
-                        Real food. Real moments.
-                        Real love behind every plate.
-                    </p>
 
+            <div class="gallery">
+
+                <div class="gallery-item large">
+                    <img
+                        src="images/gallery1.jpg"
+                        alt="Jane's Jamdung Cuisine"
+                    >
                 </div>
 
+                <div class="gallery-item">
+                    <img
+                        src="images/gallery2.jpg"
+                        alt="African cuisine"
+                    >
+                </div>
 
-                <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img
+                        src="images/gallery3.jpg"
+                        alt="Jamaican cuisine"
+                    >
+                </div>
 
-                    <div class="gallery-item gallery-large image-placeholder">
-                        <span>PHOTO 01</span>
-                    </div>
+                <div class="gallery-item">
+                    <img
+                        src="images/gallery4.jpg"
+                        alt="Homemade food"
+                    >
+                </div>
 
-                    <div class="gallery-item image-placeholder">
-                        <span>PHOTO 02</span>
-                    </div>
-
-                    <div class="gallery-item image-placeholder">
-                        <span>PHOTO 03</span>
-                    </div>
-
-                    <div class="gallery-item image-placeholder">
-                        <span>PHOTO 04</span>
-                    </div>
-
-                    <div class="gallery-item gallery-large image-placeholder">
-                        <span>PHOTO 05</span>
-                    </div>
-
+                <div class="gallery-item large">
+                    <img
+                        src="images/gallery5.jpg"
+                        alt="Homemade African food"
+                    >
                 </div>
 
             </div>
@@ -576,43 +419,53 @@
 
 
         <!-- =========================
-             ORDER CTA
+             CONTACT
         ========================== -->
 
-        <section class="order-section" id="contact">
+        <section class="contact" id="contact">
 
-            <div class="order-content">
+            <div class="contact-content">
 
-                <p class="section-kicker">
-                    04 / READY TO EAT?
+                <p class="section-label">
+                    READY TO EAT?
                 </p>
 
                 <h2>
-                    Let's get
-                    <em>you fed.</em>
+                    Let's get you
+                    <em>a plate.</em>
                 </h2>
 
                 <p>
-                    Have a question, want to place an order,
-                    or want to know what's cooking?
-                    Give Jane a call or send a text.
+                    Interested in ordering? Have questions about
+                    the menu? Want to know what's available today?
                 </p>
 
-                <div class="order-number">
-                    240-845-6628
-                </div>
+                <p>
+                    Skip the forms and send me a text or give me
+                    a call directly.
+                </p>
 
-                <div class="order-buttons">
+                <div class="contact-buttons">
 
-                    <a href="tel:2408456628" class="button button-gold">
-                        Call Jane
+                    <a
+                        href="tel:2408456628"
+                        class="primary-button"
+                    >
+                        ☎ Call Jane
                     </a>
 
-                    <a href="sms:2408456628" class="button button-outline">
-                        Text Jane
+                    <a
+                        href="sms:2408456628"
+                        class="secondary-button"
+                    >
+                        💬 Text Jane
                     </a>
 
                 </div>
+
+                <p class="phone-number">
+                    240 • 845 • 6628
+                </p>
 
             </div>
 
@@ -627,55 +480,26 @@
 
     <footer>
 
-        <div class="footer-main">
+        <div class="footer-logo">
+            Jane's Jamdung Cuisine
+        </div>
 
-            <div class="footer-brand">
+        <p>
+            African & Jamaican cuisine made with love.
+        </p>
 
-                <a href="#home" class="footer-logo">
-                    JANE'S <strong>JAMDUNG</strong>
-                </a>
+        <div class="footer-links">
 
-                <p>
-                    African • Jamaican • Homestyle
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#home">Home</a>
-                <a href="#menu">Menu</a>
-                <a href="#story">Our Story</a>
-                <a href="#gallery">Gallery</a>
-
-            </div>
-
-
-            <div class="footer-contact">
-
-                <p>ORDER BY PHONE</p>
-
-                <a href="tel:2408456628">
-                    240-845-6628
-                </a>
-
-            </div>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#story">Jane's Story</a>
+            <a href="#gallery">Gallery</a>
 
         </div>
 
-
-        <div class="footer-bottom">
-
-            <span>
-                © <span id="year"></span> Jane's Jamdung Cuisine
-            </span>
-
-            <span>
-                Made with love.
-            </span>
-
-        </div>
+        <p class="copyright">
+            © 2026 Jane's Jamdung Cuisine. All rights reserved.
+        </p>
 
     </footer>
 
