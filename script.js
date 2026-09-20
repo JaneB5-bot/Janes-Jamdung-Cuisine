@@ -1,33 +1,78 @@
-const menuButton = document.querySelector(".menu-toggle");
-const navigation = document.querySelector(".nav");
+/* =========================================
+   JANE'S JAMDUNG CUISINE
+   SIMPLE WEBSITE JAVASCRIPT
+========================================= */
 
-menuButton.addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const isOpen = navigation.classList.toggle("open");
+    /*
+        Smooth navigation
+        automatically closes the mobile menu
+        if one is added later.
+    */
 
-    menuButton.setAttribute(
-        "aria-expanded",
-        isOpen
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    links.forEach(link => {
+
+        link.addEventListener("click", function (event) {
+
+            const target = document.querySelector(
+                this.getAttribute("href")
+            );
+
+            if (target) {
+
+                event.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+            }
+
+        });
+
+    });
+
+
+    /*
+        Small reveal animation
+        for sections as they enter the screen.
+    */
+
+    const sections = document.querySelectorAll(
+        ".menu-card, .story-content, .story-image, .gallery-item"
     );
 
-});
+    const observer = new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
 
 
-document.querySelectorAll(".nav a").forEach(function (link) {
+    sections.forEach(section => {
 
-    link.addEventListener("click", function () {
+        section.classList.add("hidden");
 
-        navigation.classList.remove("open");
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            "false"
-        );
+        observer.observe(section);
 
     });
 
 });
-
-
-document.getElementById("year").textContent =
-    new Date().getFullYear();
